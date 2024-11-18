@@ -15,8 +15,8 @@ import { IoMdCart } from "react-icons/io";
 function Header() {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary fs-5 p-0 m-0">
-        <Container className="d-flex justify-content-between">
+      <Navbar expand="lg" className="bg-body-tertiary fs-5">
+        <Container className="d-flex justify-content-between p-0">
           <Navbar.Brand href="#home">
             <img src="images/d’Perfume.png" alt="brand-logo" className="img-fluid" style={{ height: '38px' }}/>
           </Navbar.Brand>
@@ -59,8 +59,6 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <div>Header</div>
     </>
   );
 }

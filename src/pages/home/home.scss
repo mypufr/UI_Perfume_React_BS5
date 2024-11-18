@@ -1,0 +1,80 @@
+.banner-img {
+  height: 480px;
+  width: auto;
+  object-position: 18% center;
+
+
+  @media (min-width: 854px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1900px) {
+    height: 870px !important;
+  }
+
+}
+
+.intro-text {
+  top: 50%;
+  color: white;
+  width: 88%;
+  transform: translate(50%, 50%);
+
+
+  h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  p {
+    line-height: 30px;
+  }
+
+  @media (min-width: 768px) {
+
+    width: 34%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(35%, -50%) !important ;
+
+
+    button {
+      max-width: 60%;
+      span {
+        font-style: 24px;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 27.5%;
+    transform: translate(45%, -50%) !important ;
+    h1 {
+      font-size: 40px;
+    }
+    p{
+      font-size: 24px;
+      line-height: 36px;
+
+    }
+
+    button {
+      max-width: 60%;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+
+
+}
+
+.shop-link span {
+  font-size: 28px;
+  @media (min-width: 992px) {
+   font-style: 24px;
+ 
+  }
+
+
+}
