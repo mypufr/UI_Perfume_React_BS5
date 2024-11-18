@@ -20,7 +20,7 @@ function Home() {
       <Button variant="link">Link</Button> */}
 
 
-      <nav className="container flex py-9">
+      {/* <nav className="container flex py-9">
         <Link to="#" 
         className="logo-link">
         <img src="images/d’Perfume.png" alt="logo"
@@ -268,7 +268,7 @@ function Home() {
             <span>查看更多</span>
           </div>
         </section>
-      </div>
+      </div> */}
 
 
 

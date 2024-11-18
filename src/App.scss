@@ -1,8 +1,19 @@
 @import "bootstrap/scss/functions";
 
 
+
 @import "./assets/scss/helpers/variables";
 
+$container-max-widths: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1108px,
+);
 
+html, body {
+  padding: 0;
+  margin: 0;
+}
 
 @import 'bootstrap/scss/bootstrap';

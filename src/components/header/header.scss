@@ -1,0 +1,9 @@
+.text-lg-primary {
+  color: #8d8d8d;
+
+  @media (max-width: 991px) {
+    color: white;
+
+    background-color: grey;
+  }
+}
