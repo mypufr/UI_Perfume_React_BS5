@@ -7,6 +7,7 @@ import "./App.scss";
 import Header from "./components/header/Header.jsx";
 import Home from "./pages/home/Home.jsx";
 import Products from "./pages/products/Products.jsx";
+import Wishlist from "./pages/wishlist/Wishlist.jsx";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/products" element={<Products />} />
+
+        <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
     </>
   );

@@ -23,7 +23,7 @@ function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto outline-0 border-0" />
           <Navbar.Collapse id="basic-navbar-nav" className="">
             <Nav className="ms-auto text-center ">
-              <Nav.Link href="#product" className=" d-flex justify-content-center align-items-center text-lg-primary">
+              <Nav.Link href="/products" className=" d-flex justify-content-center align-items-center text-lg-primary">
                 <AiOutlineShop className="me-1 d-none d-lg-block" />
                 Product
               </Nav.Link>
@@ -35,7 +35,7 @@ function Header() {
                 <IoPersonSharp className="mb-1 me-1"/>
                 log in
               </Nav.Link>
-              <Nav.Link href="#wishlist" className="d-flex justify-content-center align-items-center  text-lg-primary">
+              <Nav.Link href="/wishlist" className="d-flex justify-content-center align-items-center  text-lg-primary">
                 <FaHeart className="me-1 d-none d-lg-block"/>
                 Wishlist
               </Nav.Link>
