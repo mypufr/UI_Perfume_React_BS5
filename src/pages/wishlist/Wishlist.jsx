@@ -33,15 +33,18 @@ function Wishlist() {
                   />
 
                   <div className="card-body">
-                    <h3 className="card-title">{item.title}</h3>
+                    <h3 className="card-title fs-4 fw-semibold m-0">
+                      {item.title}
+                    </h3>
 
-                    <p>{item.category}</p>
-                    <p>
+                    <p className="fs-5 m-0">{item.category}</p>
+                    <p className="m-0 d-flex align-items-center gap-2">
                       NT${item.price}
-                      <span>NT$ {item.origin_price}</span>
+                      <span className="text-secondary">
+                        NT${item.origin_price}
+                      </span>
                     </p>
-
-                    <button>取消收藏</button>
+                    <button className="btn btn-primary">取消收藏</button>
                   </div>
                 </div>
               </div>

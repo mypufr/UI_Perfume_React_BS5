@@ -1,7 +1,5 @@
 @import "bootstrap/scss/functions";
 
-
-
 @import "./assets/scss/helpers/variables";
 
 $container-max-widths: (
@@ -11,38 +9,35 @@ $container-max-widths: (
   xl: 1108px,
 );
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-size: 20px;
-  font-family: 
-  
-  "Inter", -apple-system, BlinkMacSystemFont,  Roboto,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  // 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  // font-size: 20px;
+  line-height: 1.5;
+  font-family: "San Francisco", "PingFangSC", Helvetica, Arial,
+    "Microsoft JhengHei", sans-serif;
 
-  
-  // .custom-btn {
+  .custom-btn {
+    color: $primary;
+    cursor: pointer;
+    // border-radius: 8px;
+    // padding: 10px 15px;
+    padding: 0 5px !important;
+    transition:
+      background-color 0.3s ease,
+      color 0.1s ease;
 
-  //   color: $secondary; // 默认文字颜色
-  //   border-radius: 8px;
-  //   padding: 10px 15px;
-  //   transition: background-color 0.3s ease, color 0.3s ease; // 添加过渡效果
-  
-  //   &:hover {
-  //     color: red !important; // hover时文字颜色
-  //   }
+    &:hover {
+      background-color: rgb(246, 202, 119);
+    }
 
-  //   &:active {
-  //     color: red !important; // hover时文字颜色
-  //   }
-  // }
-
-  
+    &:active {
+      border-color: #e0e0e0;
+      transform: scale(0.95);
+    }
+  }
 }
 
-
-
-
-
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";

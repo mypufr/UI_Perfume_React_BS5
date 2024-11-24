@@ -136,6 +136,8 @@ const Products = () => {
 
             <div className="row">
               {products.map((product) => (
+
+
                 <div className="col-12 col-md-3 mb-4" key={product.id}>
                   <div className="card">
                     <img
@@ -146,23 +148,23 @@ const Products = () => {
                     />
 
                     <div className="card-body">
-                      <h3 className="card-title">{product.title}</h3>
+                      <h3 className="card-title fs-4 fw-semibold m-0">{product.title}</h3>
 
-                      <p>{product.category}</p>
-                      <p>
+                      <p className="fs-5 m-0">{product.category}</p>
+                      <p className="m-0 d-flex align-items-center gap-2">
                         NT${product.price}
-                        <span>NT$ {product.origin_price}</span>
+                        <span className="text-secondary text-decoration-line-through">NT${product.origin_price}</span>
                       </p>
 
                       <button
-                        className={`btn border-0 bg-transparent
-                         ${wishlist.includes(product) ? "text-danger" : "text-secondary"}`}
+                        className={`btn border-0 bg-transparent p-0
+                         ${wishlist.includes(product) ? "text-danger" : "text-primary"}`}
                         onClick={() => addToWishlist(product)}
                       >
-                        <FaHeart />
+                        <FaHeart className="fs-5"/>
                       </button>
                       <button className="btn custom-btn border-0 bg-transparent">
-                        <IoMdCart />
+                        <IoMdCart className="fs-5"/>
                       </button>
                     </div>
                   </div>
