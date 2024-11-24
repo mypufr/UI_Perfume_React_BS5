@@ -20,6 +20,29 @@ html, body {
   
   "Inter", -apple-system, BlinkMacSystemFont,  Roboto,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
   // 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+  
+  // .custom-btn {
+
+  //   color: $secondary; // 默认文字颜色
+  //   border-radius: 8px;
+  //   padding: 10px 15px;
+  //   transition: background-color 0.3s ease, color 0.3s ease; // 添加过渡效果
+  
+  //   &:hover {
+  //     color: red !important; // hover时文字颜色
+  //   }
+
+  //   &:active {
+  //     color: red !important; // hover时文字颜色
+  //   }
+  // }
+
+  
 }
+
+
+
+
 
 @import 'bootstrap/scss/bootstrap';

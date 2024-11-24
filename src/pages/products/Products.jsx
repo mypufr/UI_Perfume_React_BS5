@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+import "./products.scss";
+
 import { FaHeart } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 
@@ -15,6 +17,21 @@ const Products = () => {
   const [hasError, setHasError] = useState(false);
   const [message, setMessage] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+
+  // const [wishlist, setWishlist] = useState(() => {
+  //   const savedList = localStorage.getItem("wishlist");
+  //   return savedList ? JSON.parse(savedList) : [];
+  // });
+
+  const [wishlist, setWishlist] = useState(() => {
+    try {
+      const savedList = localStorage.getItem("wishlist");
+      return savedList ? JSON.parse(savedList) : [];
+    } catch (error) {
+      console.error("Failed to parse wishlist from localStorage:", error);
+      return [];
+    }
+  });
 
   const displayMessage = (newMessage, isErrorMessage = false) => {
     setHasError(isErrorMessage);
@@ -33,16 +50,21 @@ const Products = () => {
     setPage(1);
   };
 
+  const changePage = (newPage) => {
+    setPage(newPage);
+
+  };
+
   const fetchResults = async () => {
     setLoading(true);
-
+    setWishlist([]);
     try {
       const url =
         "https://ec-course-api.hexschool.io/v2/api/hex-project/products/all";
 
       const response = await axios.get(url);
       const ProductList = response.data.products;
-      console.log(ProductList);
+
 
       if (ProductList.length > 0) {
         setProducts(ProductList);
@@ -58,16 +80,51 @@ const Products = () => {
     }
   };
 
+  // const addToWishlist = (product) => {
+  //   const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+  //   if (wishlist.some((item) => item.id === product.id)) {
+  //     alert("此商品已在願望清單裡了");
+  //     return;
+  //   }
+  //   wishlist.push(product);
+  //   localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+  //   alert("商品已添加至願望清單");
+  //   console.log(wishlist);
+  // };
+
+  const addToWishlist = (product) => {
+    if (!wishlist.some((item) => item.id === product.id)) {
+      setWishlist([...wishlist, product]);
+      displayMessage("已成功添加商品到願望清單", false);
+    } else {
+      displayMessage("此商品已在願望清單裡了!", true);
+    }
+    // console.log(wishlist);
+  };
+
   useEffect(() => {
     fetchResults();
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    console.log(wishlist);
+  }, [wishlist]);
+
   return (
     <>
-      <div className="">
-        {loading && <p className="text-center">下載中...</p>}
+      <div className="text-secondary text-bold">
+        {loading && <p className="text-center ">下載中...</p>}
         {isVisible && (
-          <p className={hasError ? "error-message" : "success-message"}>
+          <p
+            className={
+              hasError
+                ? "error-message text-center"
+                : "success-message text-center"
+            }
+          >
             {message}
           </p>
         )}
@@ -76,6 +133,7 @@ const Products = () => {
           <div className="product-list container">
             {/* <h2>產品列表</h2>
           <p>共 {total} 個產品</p> */}
+
             <div className="row">
               {products.map((product) => (
                 <div className="col-12 col-md-3 mb-4" key={product.id}>
@@ -95,8 +153,17 @@ const Products = () => {
                         NT${product.price}
                         <span>NT$ {product.origin_price}</span>
                       </p>
-                      <FaHeart />
-                      <IoMdCart />
+
+                      <button
+                        className={`btn border-0 bg-transparent
+                         ${wishlist.includes(product) ? "text-danger" : "text-secondary"}`}
+                        onClick={() => addToWishlist(product)}
+                      >
+                        <FaHeart />
+                      </button>
+                      <button className="btn custom-btn border-0 bg-transparent">
+                        <IoMdCart />
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -107,7 +174,7 @@ const Products = () => {
       </div>
 
       <div className="d-flex justify-content-center">
-        <Pagination pagination={pagination} changePage={Products} />
+        <Pagination pagination={pagination} changePage={changePage} />
       </div>
     </>
   );
