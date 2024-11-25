@@ -32,7 +32,7 @@ function Home() {
         </div>
       </section>
 
-      <div className="wrap m-auto">
+      <div className="wrap m-auto mt-10">
         <section className="bestseller">
           <div className="d-flex flex-column ">
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
@@ -153,6 +153,50 @@ function Home() {
           </ul>
         </section>
       </div>
+
+      <section className="bg-light my-10">
+        <div className="series-wrap">
+          <div className="series-list d-flex flex-column justify-content-center align-items-center gap-4 flex-xl-row pt-8 pb-9 pt-md-9 px-md-1">
+            <div className="series_list-item">
+              <img
+                src="images/photo-1530630458144-014709e10016.png"
+                alt="Poppy_&_Barley-image"
+                className="object-fit"
+              />
+              <h3 className="fs-4 mb-0 mt-2">Poppy & Barley</h3>
+              <p className="mb-0">Jo Malone</p>
+              <div className="d-flex gap-2">
+                <p className="">NT$1.380</p>
+                <span className="text-decoration-line-through text-secondary">NT$ 1580</span>
+              </div>
+            </div>
+
+            <div className="series_list-item">
+              <img
+                src="images/photo-1556228720-da4e85f25e15.png"
+                alt="Body_Wash-image"
+                className="object-fit-cover"
+              />
+              <h3 className="fs-4 mb-0 mt-2">Body Wash</h3>
+              <p className="mb-0 mb-0">Curology</p>
+              <p>NT$1,580</p>
+            </div>
+
+            <div className="series_list-item">
+              <div className="sold_out-item sold-out">
+                <img
+                  src="images/photo-1559264730-1533a6ec0433.png"
+                  alt="Apple_Cider_Vinegar_Capsule-image"
+                  className="opacity-50 img-fluid object-fit"
+                />
+              </div>
+              <h3 className="fs-4 mb-0 mt-2">Apple Cider Vinegar Capsule</h3>
+              <p className="mb-0">Tonik</p>
+              <p>NT$1,580</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
