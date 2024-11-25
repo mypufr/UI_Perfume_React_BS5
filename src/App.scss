@@ -6,7 +6,7 @@ $container-max-widths: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1108px,
+  xl: 1110px,
 );
 
 html,
@@ -19,11 +19,13 @@ body {
   font-family: "San Francisco", "PingFangSC", Helvetica, Arial,
     "Microsoft JhengHei", sans-serif;
 
+  li {
+    list-style: none;
+  }
+
   .custom-btn {
     color: $primary;
     cursor: pointer;
-    // border-radius: 8px;
-    // padding: 10px 15px;
     padding: 0 5px !important;
     transition:
       background-color 0.3s ease,
@@ -38,6 +40,9 @@ body {
       transform: scale(0.95);
     }
   }
+
+
+ 
 }
 
 @import "bootstrap/scss/bootstrap";

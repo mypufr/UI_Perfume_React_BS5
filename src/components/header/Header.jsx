@@ -16,7 +16,7 @@ function Header() {
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary fs-5">
-        <Container className="d-flex justify-content-between p-0">
+        <Container className="d-flex justify-content-between px-3">
           <Navbar.Brand href="/">
             <img src="images/d’Perfume.png" alt="brand-logo" className="img-fluid" style={{ height: '38px' }}/>
           </Navbar.Brand>

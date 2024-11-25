@@ -1,8 +1,11 @@
+$default-height: 350px;
+$large-screen-height: 555px;
+$default-training-image-height: 680px;
+
 .banner-img {
   height: 480px;
   width: auto;
   object-position: 18% center;
-
 
   @media (min-width: 854px) {
     width: 100%;
@@ -11,7 +14,6 @@
   @media (min-width: 1900px) {
     height: 870px !important;
   }
-
 }
 
 .intro-text {
@@ -20,23 +22,17 @@
   width: 88%;
   transform: translate(50%, 50%);
 
-
   h1 {
     font-size: 32px;
     line-height: 48px;
   }
-  p {
-    line-height: 30px;
-  }
 
   @media (min-width: 768px) {
-
     width: 34%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(35%, -50%) !important ;
-
 
     button {
       max-width: 60%;
@@ -52,10 +48,9 @@
     h1 {
       font-size: 40px;
     }
-    p{
+    p {
       font-size: 24px;
       line-height: 36px;
-
     }
 
     button {
@@ -65,16 +60,86 @@
       }
     }
   }
-
-
 }
 
 .shop-link span {
   font-size: 28px;
   @media (min-width: 992px) {
-   font-style: 24px;
- 
+    font-style: 24px;
+  }
+}
+
+.wrap {
+  max-width: 1110px;
+
+  @media (max-width: 300px) {
+    max-width: 299px;
+  }
+  @media (max-width: 375px) {
+    max-width: 347px;
+  }
+  @media (min-width: 376px) {
+    max-width: 80vw;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1110px;
+  }
+}
+
+.bestseller {
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
   }
 
+  .bestseller-img {
+    height: $default-height;
+    @media (min-width: 768px) {
+      height: $large-screen-height * 0.675;
+    }
+    @media (min-width: 1024px) {
+      height: $large-screen-height * 0.736;
+    }
+    @media (min-width: 1440px) {
+      height: $large-screen-height;
+    }
+  }
+
+  .bestseller-text {
+    max-width: 350px;
+    font-weight: 300;
+  }
+}
+
+.training-banner {
+  max-width: 345px;
+  @media (min-width: 768px) {
+    min-width: 48.5%;
+  }
+  @media (min-width: 1024px) {
+    min-width: 50%;
+  }
+  @media (min-width: 1440px) {
+    min-width: 50%;
+  }
+}
+
+.training-image {
+  height: $default-training-image-height;
+  @media (min-width: 768px) {
+    height: $default-training-image-height * 1.2;
+  }
+  @media (min-width: 1024px) {
+    height: 1080px;
+  }
+}
+
+.training-list {
+  @media (min-width: 1024px) {
+    max-width: 350px;
+    margin: auto;
+  }
 
 }
+
+

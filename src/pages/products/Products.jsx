@@ -7,6 +7,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 
 import Pagination from "../../components/pagination/Pagination";
+import Categories from "../../components/categories/Categories";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -17,11 +18,6 @@ const Products = () => {
   const [hasError, setHasError] = useState(false);
   const [message, setMessage] = useState("");
   const [isVisible, setIsVisible] = useState(false);
-
-  // const [wishlist, setWishlist] = useState(() => {
-  //   const savedList = localStorage.getItem("wishlist");
-  //   return savedList ? JSON.parse(savedList) : [];
-  // });
 
   const [wishlist, setWishlist] = useState(() => {
     try {
@@ -40,7 +36,7 @@ const Products = () => {
 
     setTimeout(() => {
       setIsVisible(false);
-    }, 3000);
+    }, 5000);
   };
 
   const reset = () => {
@@ -80,28 +76,13 @@ const Products = () => {
     }
   };
 
-  // const addToWishlist = (product) => {
-  //   const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-
-  //   if (wishlist.some((item) => item.id === product.id)) {
-  //     alert("此商品已在願望清單裡了");
-  //     return;
-  //   }
-  //   wishlist.push(product);
-  //   localStorage.setItem("wishlist", JSON.stringify(wishlist));
-
-  //   alert("商品已添加至願望清單");
-  //   console.log(wishlist);
-  // };
-
   const addToWishlist = (product) => {
     if (!wishlist.some((item) => item.id === product.id)) {
       setWishlist([...wishlist, product]);
-      displayMessage("已成功添加商品到願望清單", false);
+      displayMessage("已成功添加商品到願望清單");
     } else {
-      displayMessage("此商品已在願望清單裡了!", true);
+      displayMessage("此商品已在願望清單裡了!");
     }
-    // console.log(wishlist);
   };
 
   useEffect(() => {
@@ -115,14 +96,17 @@ const Products = () => {
 
   return (
     <>
+
+<Categories />
+
       <div className="text-secondary text-bold">
-        {loading && <p className="text-center ">下載中...</p>}
+        {loading && <p className="text-center fs-3">下載中...</p>}
         {isVisible && (
           <p
             className={
               hasError
-                ? "error-message text-center"
-                : "success-message text-center"
+                ? "error-message text-center text-red fs-3"
+                : "success-message text-center  fs-3"
             }
           >
             {message}
@@ -130,27 +114,23 @@ const Products = () => {
         )}
 
         {!loading && products.length > 0 && (
-          <div className="product-list container">
-            {/* <h2>產品列表</h2>
-          <p>共 {total} 個產品</p> */}
-
-            <div className="row">
+          <div className="container px-3" >
+            <div className="product-list row">
               {products.map((product) => (
 
 
-                <div className="col-12 col-md-3 mb-4" key={product.id}>
-                  <div className="card">
+                <div className="col-6 col-md-3 col-sm-6 mb-4" key={product.id}>
+                  <div className="card border-0">
                     <img
                       src={product.image}
                       alt={product.title}
-                      height="255"
-                      className="object-fit"
+                      className="product-img object-fit"
                     />
 
                     <div className="card-body">
                       <h3 className="card-title fs-4 fw-semibold m-0">{product.title}</h3>
 
-                      <p className="fs-5 m-0">{product.category}</p>
+                      <p className="m-0">{product.category}</p>
                       <p className="m-0 d-flex align-items-center gap-2">
                         NT${product.price}
                         <span className="text-secondary text-decoration-line-through">NT${product.origin_price}</span>

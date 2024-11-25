@@ -1,1 +1,27 @@
 
+
+.card {
+  transition:
+    box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.card:active {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+}
+
+.product-list {
+  padding-top: 51px;
+
+  @media (min-width: 991px) {
+    padding-top: 80px;
+  }
+}
+
+.product-img {
+  height: 165px;
+  @media (min-width: 991px) {
+    height: 255px;
+  }
+}
