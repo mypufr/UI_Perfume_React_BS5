@@ -139,40 +139,26 @@ $default-training-image-height: 680px;
     max-width: 350px;
     margin: auto;
   }
-
 }
-
-// .series-list {
-//   padding: 32px 0 40px 0;
-//   @media (min-width: 768px) {
-//     padding: 40px 2px;
-//     }
-// }
-
 
 .series_list-item {
-h3 {
-  font-size: 24px !important;
-}
+  h3 {
+    font-size: 24px !important;
+  }
 
   img {
     height: 350px;
     min-width: 344px;
 
     @media (min-width: 996px) {
-    height: 540px;
+      height: 540px;
     }
-
-
-   }
-
+  }
 }
-
 
 .sold_out-item {
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
-
 
   &::before {
     content: "";
@@ -197,3 +183,24 @@ h3 {
   }
 }
 
+.recycle-info {
+gap: 30px;
+
+  .recycle-text {
+    h5 {
+      font-size: 32px !important;
+    }
+  }
+}
+
+.recycle-banner {
+  min-width: 345px;
+  height: 520px;
+  background-image: url("https://images.unsplash.com/photo-1594913615593-e4b8c44625be?q=100&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 996px) {
+    min-width: 730px;
+  }
+}

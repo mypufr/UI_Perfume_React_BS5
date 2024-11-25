@@ -32,9 +32,9 @@ function Home() {
         </div>
       </section>
 
-      <div className="wrap m-auto mt-10">
+      <div className="wrap m-auto mt-9 mt-xxl-10">
         <section className="bestseller">
-          <div className="d-flex flex-column ">
+          <div className="d-flex flex-column">
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
@@ -90,7 +90,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="d-md-flex ">
+        <section className="d-md-flex mt-8 mt-md-0">
           <div className="training-banner flex-1">
             <img
               src="https://images.unsplash.com/photo-1542038382126-77ae2819338d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -130,8 +130,7 @@ function Home() {
             </li>
             <li className="mb-3">
               <h6
-                className="fs-4 fw-semibold
-              "
+                className="fs-4 fw-semibold"
               >
                 3.
                 <br />
@@ -154,7 +153,7 @@ function Home() {
         </section>
       </div>
 
-      <section className="bg-light my-10">
+      <section className="bg-light my-9 my-xxl-10 ">
         <div className="series-wrap">
           <div className="series-list d-flex flex-column justify-content-center align-items-center gap-4 flex-xl-row pt-8 pb-9 pt-md-9 px-md-1">
             <div className="series_list-item">
@@ -167,7 +166,9 @@ function Home() {
               <p className="mb-0">Jo Malone</p>
               <div className="d-flex gap-2">
                 <p className="">NT$1.380</p>
-                <span className="text-decoration-line-through text-secondary">NT$ 1580</span>
+                <span className="text-decoration-line-through text-secondary">
+                  NT$ 1580
+                </span>
               </div>
             </div>
 
@@ -197,6 +198,28 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <div className="container my-9 my-xxl-10 px-xl-0">
+        <section className="recycle-info mt-60 d-lg-flex justify-content-lg-center align-items-lg-center">
+          <div className="recycle-banner flex-1"></div>
+
+          <div className="recycle-text flex-1 ">
+            <h5 className="fs-2 fw-bold pt-2">Bottle-Recycling</h5>
+            <p className="fs-5 fw-semibold mb-2">
+              Recycle your used empty bottles and be rewareded
+            </p>
+            <p className="fw-light">
+              For the past 10 years, we have collected over 800,000 bottles
+              through Empty Bottle Recycling Campaign and planted more than 860
+              pine trees for a better environment.For the past 10 years, we have
+              collected over 800,000 bottles through Empty Bottle Recycling
+              Campaign and planted more than 860 pine trees for a better
+              environment.
+            </p>
+            <span className="text-primary fw-semibold">查看更多</span>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

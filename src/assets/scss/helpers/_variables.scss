@@ -301,10 +301,10 @@ $cyans: (
 $primary:       #916019; //  !default;
 $secondary:     #8D8D8D; // !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          $cyan ;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #E0E0E0; //!default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -417,6 +417,9 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 1.75,
   7: $spacer * 0.875,
+  8: $spacer * 2,
+  9: $spacer * 2.5,
+  10: $spacer * 3.75
 ) !default;
 // scss-docs-end spacer-variables-maps
 
