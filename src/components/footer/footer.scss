@@ -1,16 +1,36 @@
 footer {
+  .newsletter-info {
+    top: 55%;
+    left: 3%;
 
-.newsletter-info {
-  top: 55%;
-  left: 3%;
+    @media (min-width: 1440px) {
+      left: 11%;
+    }
+  }
 
-}
+  .footer-info {
+    padding: 21px 0;
+  }
 
-h4 {
-  font-size: 32px;
-}
+  h4 {
+    font-size: 32px;
+  }
 
-img {
+  img {
     max-height: 600px;
+
+    @media (min-width: 600px) {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  .footer_navbar-links {
+    gap: 36px;
   }
 }
