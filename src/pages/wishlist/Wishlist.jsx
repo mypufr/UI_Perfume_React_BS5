@@ -32,6 +32,8 @@ function Wishlist() {
   }, []);
   return (
     <div>
+      <h1 className="text-primary text-center mt-5 fs-2">您有<span className="text-black">{wishlist.length}
+        </span>件收藏商品</h1>
       <div className="container px-3">
         {wishlist.length > 0 ? (
           <div className="product-list row">

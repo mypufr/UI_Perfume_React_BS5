@@ -48,7 +48,6 @@ const Products = () => {
 
   const changePage = (newPage) => {
     setPage(newPage);
-
   };
 
   const fetchResults = async () => {
@@ -60,7 +59,6 @@ const Products = () => {
 
       const response = await axios.get(url);
       const ProductList = response.data.products;
-
 
       if (ProductList.length > 0) {
         setProducts(ProductList);
@@ -79,9 +77,9 @@ const Products = () => {
   const addToWishlist = (product) => {
     if (!wishlist.some((item) => item.id === product.id)) {
       setWishlist([...wishlist, product]);
-      displayMessage("已成功添加商品到願望清單");
+      displayMessage("成功加入至收藏清單");
     } else {
-      displayMessage("此商品已在願望清單裡了!");
+      displayMessage("此商品已在收藏清單裡了!");
     }
   };
 
@@ -96,8 +94,7 @@ const Products = () => {
 
   return (
     <>
-
-<Categories />
+      <Categories />
 
       <div className="text-secondary text-bold">
         {loading && <p className="text-center fs-3">下載中...</p>}
@@ -114,11 +111,9 @@ const Products = () => {
         )}
 
         {!loading && products.length > 0 && (
-          <div className="container px-3" >
+          <div className="container px-3">
             <div className="product-list row">
               {products.map((product) => (
-
-
                 <div className="col-6 col-md-3 col-sm-6 mb-4" key={product.id}>
                   <div className="card border-0">
                     <img
@@ -128,12 +123,16 @@ const Products = () => {
                     />
 
                     <div className="card-body">
-                      <h3 className="card-title fs-4 fw-semibold m-0">{product.title}</h3>
+                      <h3 className="card-title fs-4 fw-semibold m-0">
+                        {product.title}
+                      </h3>
 
                       <p className="m-0">{product.category}</p>
                       <p className="m-0 d-flex align-items-center gap-2">
                         NT${product.price}
-                        <span className="text-secondary text-decoration-line-through">NT${product.origin_price}</span>
+                        <span className="text-secondary text-decoration-line-through">
+                          NT${product.origin_price}
+                        </span>
                       </p>
 
                       <button
@@ -141,10 +140,10 @@ const Products = () => {
                          ${wishlist.includes(product) ? "text-danger" : "text-primary"}`}
                         onClick={() => addToWishlist(product)}
                       >
-                        <FaHeart className="fs-5"/>
+                        <FaHeart className="fs-5" />
                       </button>
                       <button className="btn custom-btn border-0 bg-transparent">
-                        <IoMdCart className="fs-5"/>
+                        <IoMdCart className="fs-5" />
                       </button>
                     </div>
                   </div>

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./home.scss";
-import Button from "react-bootstrap/Button";
 
 function Home() {
   return (
@@ -25,7 +24,7 @@ function Home() {
 
             <Link to="/products" className="text-decoration-none shop-link">
               <button className="bg-transparent text-white border border-2 border-white rounded-pill w-100">
-                <span className="d-inline-block py-1"> Shop now</span>
+                <span className="d-inline-block py-1">Shop now</span>
               </button>
             </Link>
           </div>
@@ -50,7 +49,9 @@ function Home() {
                   全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。
                   極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。
                 </p>
-                <span className="text-primary fw-semibold">查看更多</span>
+                <Link className="text-decoration-none">
+                  <span className="text-primary fw-semibold">查看更多</span>
+                </Link>
               </div>
             </div>
 
@@ -62,12 +63,14 @@ function Home() {
                   className="bestseller-img mw-100 object-fit"
                 />
               </div>
-              <div className="flex-1 m-auto">
+              <div className="bestseller-card flex-1 m-auto">
                 <h2 className="fw-bold">Five O’clock Au Gingembre</h2>
                 <p className="bestseller-text fs-5">
                   生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。
                 </p>
-                <span className="text-primary fw-semibold">查看更多</span>
+                <Link className="text-decoration-none">
+                  <span className="text-primary fw-semibold">查看更多</span>
+                </Link>
               </div>
             </div>
 
@@ -79,12 +82,14 @@ function Home() {
                   className="bestseller-img mw-100 object-fit"
                 />
               </div>
-              <div className="flex-1 m-auto">
+              <div className="bestseller-card flex-1 m-auto">
                 <h2 className="fw-bold">CHANEL N°5</h2>
                 <p className="bestseller-text fs-5">
                   N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
                 </p>
-                <span className="text-primary fw-semibold">查看更多</span>
+                <Link className="text-decoration-none">
+                  <span className="text-primary fw-semibold">查看更多</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -129,9 +134,7 @@ function Home() {
               </p>
             </li>
             <li className="mb-3">
-              <h6
-                className="fs-4 fw-semibold"
-              >
+              <h6 className="fs-4 fw-semibold">
                 3.
                 <br />
                 Critical percentage of planned maintenance
@@ -216,7 +219,9 @@ function Home() {
               Campaign and planted more than 860 pine trees for a better
               environment.
             </p>
-            <span className="text-primary fw-semibold">查看更多</span>
+            <Link className="text-decoration-none">
+              <span className="text-primary fw-semibold">查看更多</span>
+            </Link>
           </div>
         </section>
       </div>

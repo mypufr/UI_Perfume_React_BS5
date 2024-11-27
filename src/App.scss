@@ -14,7 +14,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  // font-size: 20px;
   line-height: 1.5;
   font-family: "San Francisco", "PingFangSC", Helvetica, Arial,
     "Microsoft JhengHei", sans-serif;
@@ -23,6 +22,7 @@ body {
     list-style: none;
   }
 
+ 
   .custom-btn {
     color: $primary;
     cursor: pointer;
@@ -32,7 +32,7 @@ body {
       color 0.1s ease;
 
     &:hover {
-      background-color: rgb(246, 202, 119);
+      background-color: #8D8D8D;
     }
 
     &:active {
@@ -40,9 +40,6 @@ body {
       transform: scale(0.95);
     }
   }
-
-
- 
 }
 
 @import "bootstrap/scss/bootstrap";
