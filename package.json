@@ -1,6 +1,7 @@
 {
   "name": "ui-perfume-exercise-react-bs5",
   "private": true,
+  "homepage": "https://mypufr.github.io/UI_Perfume_React_BS5",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
