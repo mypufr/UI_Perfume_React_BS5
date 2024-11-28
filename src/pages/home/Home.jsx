@@ -37,7 +37,8 @@ function Home() {
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  src="images/g3ew7lob.png"
+                  // src="images/g3ew7lob.png"
+                  src="https://i.imgur.com/hxuu1CO.png"
                   alt="Gabrielle_CHANEL-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -58,7 +59,8 @@ function Home() {
             <div className="d-sm-flex align-items-center  justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  src="images/Five_Oclock (555 x 555 px).png"
+                  // src="images/Five_Oclock (555 x 555 px).png"
+                  src="https://i.imgur.com/Z6Dhlbd.png"
                   alt="Five_O’clock_Au_Gingembre-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -77,7 +79,8 @@ function Home() {
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  src="images/gvjxokum.png"
+                  // src="images/gvjxokum.png"
+                  src="https://i.imgur.com/vFsqARO.png"
                   alt="CHANEL_N°5-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -161,7 +164,8 @@ function Home() {
           <div className="series-list d-flex flex-column justify-content-center align-items-center gap-4 flex-xl-row pt-8 pb-9 pt-md-9 px-md-1">
             <div className="series_list-item">
               <img
-                src="images/photo-1530630458144-014709e10016.png"
+                // src="images/photo-1530630458144-014709e10016.png"
+                src="https://i.imgur.com/9MjnVbh.png"
                 alt="Poppy_&_Barley-image"
                 className="object-fit"
               />
@@ -177,7 +181,8 @@ function Home() {
 
             <div className="series_list-item">
               <img
-                src="images/photo-1556228720-da4e85f25e15.png"
+                // src="images/photo-1556228720-da4e85f25e15.png"
+                src="https://i.imgur.com/aA9iz48.png"
                 alt="Body_Wash-image"
                 className="object-fit-cover"
               />
@@ -189,7 +194,8 @@ function Home() {
             <div className="series_list-item">
               <div className="sold_out-item sold-out">
                 <img
-                  src="images/photo-1559264730-1533a6ec0433.png"
+                  // src="images/photo-1559264730-1533a6ec0433.png"
+                  src="https://i.imgur.com/V0SJ1js.png"
                   alt="Apple_Cider_Vinegar_Capsule-image"
                   className="opacity-50 img-fluid object-fit"
                 />
