@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
@@ -13,15 +14,15 @@ import Wishlist from "./pages/wishlist/Wishlist.jsx";
 function App() {
   return (
     <>
-      <Header />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-      </Routes>
-
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
