@@ -8,15 +8,15 @@ function Home() {
   return (
     <>
       <section className="position-relative">
-        <div className="">
+        <div className="banner">
           <img
             src="https://images.unsplash.com/photo-1588159343745-445ae0b16383?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="intro-image"
             className="banner-img img-fluid object-fit-cover"
           />
           <div className="position-absolute start-50 translate-middle intro-text">
-            <h1 className="">Perfume your day</h1>
-            <p className="">
+            <h1 className="banner-title">Perfume your day</h1>
+            <p className="banner-text">
               A perfume is like a piece of clothing, a message, a way of
               presenting oneself a costume that according to the person who
               wears it.
@@ -37,8 +37,7 @@ function Home() {
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  // src="images/g3ew7lob.png"
-                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="images/g3ew7lob.png"
                   alt="Gabrielle_CHANEL-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -59,9 +58,7 @@ function Home() {
             <div className="d-sm-flex align-items-center  justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  // src="images/Five_Oclock (555 x 555 px).png"
-                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-
+                  src="images/Five_Oclock (555 x 555 px).png"
                   alt="Five_O’clock_Au_Gingembre-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -80,9 +77,7 @@ function Home() {
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  // src="images/gvjxokum.png"
-                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-
+                  src="images/gvjxokum.png"
                   alt="CHANEL_N°5-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -166,16 +161,14 @@ function Home() {
           <div className="series-list d-flex flex-column justify-content-center align-items-center gap-4 flex-xl-row pt-8 pb-9 pt-md-9 px-md-1">
             <div className="series_list-item">
               <img
-                // src="images/photo-1530630458144-014709e10016.png"
-                src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-
+                src="images/photo-1530630458144-014709e10016.png"
                 alt="Poppy_&_Barley-image"
                 className="object-fit"
               />
               <h3 className="fs-4 mb-0 mt-2">Poppy & Barley</h3>
               <p className="mb-0">Jo Malone</p>
               <div className="d-flex gap-2">
-                <p className="">NT$1.380</p>
+                <p>NT$1.380</p>
                 <span className="text-decoration-line-through text-secondary">
                   NT$ 1580
                 </span>
@@ -184,9 +177,7 @@ function Home() {
 
             <div className="series_list-item">
               <img
-                // src="images/photo-1556228720-da4e85f25e15.png"
-                src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-
+                src="images/photo-1556228720-da4e85f25e15.png"
                 alt="Body_Wash-image"
                 className="object-fit-cover"
               />
@@ -198,9 +189,7 @@ function Home() {
             <div className="series_list-item">
               <div className="sold_out-item sold-out">
                 <img
-                  // src="images/photo-1559264730-1533a6ec0433.png"
-                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-
+                  src="images/photo-1559264730-1533a6ec0433.png"
                   alt="Apple_Cider_Vinegar_Capsule-image"
                   className="opacity-50 img-fluid object-fit"
                 />
