@@ -37,7 +37,8 @@ function Home() {
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  src="images/g3ew7lob.png"
+                  // src="images/g3ew7lob.png"
+                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Gabrielle_CHANEL-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -58,7 +59,9 @@ function Home() {
             <div className="d-sm-flex align-items-center  justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  src="images/Five_Oclock (555 x 555 px).png"
+                  // src="images/Five_Oclock (555 x 555 px).png"
+                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
                   alt="Five_O’clock_Au_Gingembre-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -77,7 +80,9 @@ function Home() {
             <div className="d-sm-flex flex-sm-row-reverse align-items-center justify-content-sm-between mb-4 mb-sm-0">
               <div className="flex-1">
                 <img
-                  src="images/gvjxokum.png"
+                  // src="images/gvjxokum.png"
+                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
                   alt="CHANEL_N°5-image"
                   className="bestseller-img mw-100 object-fit"
                 />
@@ -145,7 +150,7 @@ function Home() {
                 performed immediately.
               </p>
             </li>
-            <Link to="/" className="">
+            <Link to="/">
               <button className="training-button rounded-pill border border-2 border-black bg-transparent w-100 m-auto">
                 <span className="fs-5 fw-medium d-inline-block p-3 px-lg-0">
                   Plan a free online training
@@ -161,7 +166,9 @@ function Home() {
           <div className="series-list d-flex flex-column justify-content-center align-items-center gap-4 flex-xl-row pt-8 pb-9 pt-md-9 px-md-1">
             <div className="series_list-item">
               <img
-                src="images/photo-1530630458144-014709e10016.png"
+                // src="images/photo-1530630458144-014709e10016.png"
+                src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
                 alt="Poppy_&_Barley-image"
                 className="object-fit"
               />
@@ -177,7 +184,9 @@ function Home() {
 
             <div className="series_list-item">
               <img
-                src="images/photo-1556228720-da4e85f25e15.png"
+                // src="images/photo-1556228720-da4e85f25e15.png"
+                src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
                 alt="Body_Wash-image"
                 className="object-fit-cover"
               />
@@ -189,7 +198,9 @@ function Home() {
             <div className="series_list-item">
               <div className="sold_out-item sold-out">
                 <img
-                  src="images/photo-1559264730-1533a6ec0433.png"
+                  // src="images/photo-1559264730-1533a6ec0433.png"
+                  src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
                   alt="Apple_Cider_Vinegar_Capsule-image"
                   className="opacity-50 img-fluid object-fit"
                 />
