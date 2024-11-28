@@ -19,14 +19,15 @@ function Header() {
     <>
       <Navbar expand="lg" className="bg-body-tertiary fs-5">
         <Container className="d-flex justify-content-between px-3">
-          <Navbar.Brand href="/"
-             onClick={() => navigate("/")}>
-            <img
-              src="images/d’Perfume.png"
-              alt="brand-logo"
-              className="img-fluid"
-              style={{ height: "38px" }}
-            />
+          <Navbar.Brand href="/">
+            <Link to="/">
+              <img
+                src="images/d’Perfume.png"
+                alt="brand-logo"
+                className="img-fluid"
+                style={{ height: "38px" }}
+              />
+            </Link>
           </Navbar.Brand>
 
           <div>
